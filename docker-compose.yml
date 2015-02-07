@@ -1,0 +1,28 @@
+logs:
+  image: busybox
+  volumes:
+    - /var/log/hipache
+    - /var/log/nginx
+  command: /bin/true
+
+data:
+  image: busybox
+  volumes:
+    - /data
+  command: /bin/true
+
+redis:
+  image: redis:2.8
+  volumes_from:
+    - data
+  command: redis-server --appendonly yes
+
+www:
+  build: .
+  links:
+    - redis
+  volumes_from:
+    - logs
+  ports:
+    - "80:80"
+
