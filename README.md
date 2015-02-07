@@ -6,8 +6,8 @@
 ## About
 
 This configuration will crate one container with the latest version of Hipache
-on NPM, inject your [config.json], and listen on port 80. It will also create
-a sperate Redis container which is used for VHOST configurations.
+on NPM, inject your Hipache config, and listen on port 80. It will also create a
+separate Redis container which is used for VHOST configurations.
 
 ## Requirements
 
