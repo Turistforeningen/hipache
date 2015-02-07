@@ -1,12 +1,12 @@
 logs:
-  image: busybox
+  image: tianon/true:latest
   volumes:
     - /var/log/hipache
     - /var/log/nginx
   command: /bin/true
 
 data:
-  image: busybox
+  image: tianon/true:latest
   volumes:
     - /data
   command: /bin/true
