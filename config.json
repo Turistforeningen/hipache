@@ -1,0 +1,25 @@
+{
+    "server": {
+        "debug": false,
+        "workers": 5,
+        "maxSockets": 100,
+        "tcpTimeout": 30,
+        "deadBackendTTL": 30,
+        "retryOnError": 3,
+        "accessLog": "/var/log/hipache/access.log",
+        "httpKeepAlive": false,
+        "deadBackendOn500": true,
+        "staticDir": null,
+
+        "address": ["0.0.0.0"],
+        "port": 80
+    },
+    "http": {
+        "port": 80,
+        "bind": ["0.0.0.0"]
+    },
+    "driver": "redis://redis:6379",
+    "user": "root",
+    "group": "root"
+}
+
