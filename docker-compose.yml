@@ -1,15 +1,17 @@
 logs:
-  image: tianon/true:latest
+  # image: tianon/true:latest (docker/fig#919)
+  image: busybox:latest
   volumes:
     - /var/log/hipache
     - /var/log/nginx
-  command: /bin/true
+  command: /bin/echo
 
 data:
-  image: tianon/true:latest
+  # image: tianon/true:latest (docker/fig#919)
+  image: busybox:latest
   volumes:
     - /data
-  command: /bin/true
+  command: /bin/echo
 
 redis:
   image: redis:2.8
