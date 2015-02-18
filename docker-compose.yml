@@ -27,4 +27,3 @@ www:
     - logs
   ports:
     - "80:80"
-
