@@ -18,6 +18,7 @@ redis:
   volumes_from:
     - data
   command: redis-server --appendonly yes
+  restart: always
 
 www:
   build: .
@@ -27,3 +28,4 @@ www:
     - logs
   ports:
     - "80:80"
+  restart: always
