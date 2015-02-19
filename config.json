@@ -15,7 +15,7 @@
         "port": 8080,
 
         "https": {
-            "port": 443,
+            "port": 4430,
             "key": "/etc/ssl/ssl.key",
             "cert": "/etc/ssl/ssl.pem"
         }
