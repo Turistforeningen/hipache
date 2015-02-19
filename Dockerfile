@@ -4,4 +4,4 @@ RUN npm install hipache -g
 ADD config.json /etc/hipache.json
 CMD hipache --config /etc/hipache.json
 
-EXPOSE 80
+EXPOSE 8080 4430
