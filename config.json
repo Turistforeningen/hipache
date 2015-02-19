@@ -17,7 +17,7 @@
         "https": {
             "port": 443,
             "key": "/etc/ssl/ssl.key",
-            "cert": "/etc/ssl/ssl.crt"
+            "cert": "/etc/ssl/ssl.pem"
         }
     },
     "http": {
