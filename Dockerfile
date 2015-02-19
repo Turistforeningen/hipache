@@ -1,4 +1,4 @@
-FROM iojs:1.1.0
+FROM iojs:1.2.0
 
 RUN npm install hipache -g
 ADD config.json /etc/hipache.json
